@@ -1,0 +1,52 @@
+#include<stdio.h>
+#include<math.h>
+void detail();
+void counter();
+void detail()
+{
+  char name[50];
+  float bill;
+  float unit;
+  printf("Enter name\n");
+  scanf("%s",&name);
+  printf("Enter unit \n");
+  scanf("%f",& unit);
+  if(unit > 300)
+  {
+  	bill = unit * 50*(5/100);
+	printf("Bill = #%f\n",bill); 
+  }
+  else if( unit <= 300 )
+  {
+  	bill = unit * 50;
+  	printf("Bill = #%f\n",bill);
+  }
+  else if (unit <= 10 )
+  {
+  	printf("NOT VALID");
+  }
+  else
+  {
+  	print("ERROR");
+  }
+  return counter();
+  
+  	
+}
+void counter()
+{
+	int counter = 0;
+	for( counter=0;counter <= 10;counter=counter + 1);
+	{
+		detail();
+	}
+	
+	
+	
+}
+
+int main()
+{
+	detail();
+	
+}
